@@ -1,7 +1,8 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+/* 1. Configurações Gerais e Fundo Minimalista */
 body {
-    background-color: #2E282A;
-    color: #E6E6E9; /* Texto em azul marinho escuro para contraste */
+    background-color: #f0f4f8; /* Azul-cinza bem suave (Gelo Moderno) */
+    color: #2c3e50; /* Texto em azul marinho escuro */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     max-width: 800px;
@@ -9,89 +10,75 @@ body {
     padding: 20px;
 }
 
-/* Cabeçalho */
+/* 2. Cabeçalho Profissional */
 header {
     text-align: center;
     padding: 40px 0;
-    background-color: #273043; 
+    background-color: #2c3e50; /* Azul Marinho Sólido */
     color: white;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* 3. Foto de Perfil (O ajuste que fizemos para o seu rosto) */
 header img {
-    /* Mágica 1: Deixa a foto circular */
-    border-radius: 50%;
-    
-    /* Mágica 2: Define um tamanho fixo e quadrado para a moldura */
     width: 150px;
     height: 150px;
-    
-    /* Mágica 3: Garante que o rosto fique centralizado e preencha a moldura */
-    object-fit: cover;
-    object-position: center; /* Você pode usar 'top' se o rosto ficar muito baixo */
-    
-    /* Estilo adicional (opcional, mas fica bonito) */
+    border-radius: 50%; /* Mantém circular */
+    object-fit: cover; /* Não distorce a imagem */
+    object-position: center; 
     border: 4px solid #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-top: 15px;
-}
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Títulos */
+/* 4. Estilização dos Blocos de Conteúdo (Efeito Card) */
+main, section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 5. Títulos */
 h2 {
     color: #2c3e50;
     border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-    margin-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 0;
 }
 
-h3 {
-    color: #34495e;
-    margin-bottom: 5px;
-}
+/* 6. Links e Ícones com Efeitos de Interação */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
-/* Listas */
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Links */
-/* Estilo padrão dos links e ícones */
 a {
-    color: #3498db; /* Azul original */
+    color: #3498db;
     text-decoration: none;
     font-weight: bold;
     display: inline-flex;
     align-items: center;
-    gap: 8px; /* Espaço entre o ícone e o texto */
-    transition: all 0.3s ease; /* A MÁGICA: faz a mudança levar 0.3 segundos */
+    gap: 8px;
+    transition: all 0.3s ease; /* Transição suave */
 }
 
-/* Efeito ao passar o mouse (Hover) */
 a:hover {
-    color: #E6E6E9; /* Muda para o azul marinho que usamos no header */
-    transform: translateY(-3px); /* Faz o link "pular" levemente para cima */
-    text-shadow: 0px 2px 4px rgba(0,0,0,0.1); /* Dá uma leve profundidade */
+    color: #2c3e50;
+    transform: translateY(-3px); /* Link "pula" levemente */
 }
 
-/* Efeito especial para os ícones dentro dos links */
 a:hover i {
-    transform: scale(1.2); /* O ícone do GitHub/LinkedIn cresce um pouquinho */
-    color: #e67e22; /* Opcional: o ícone muda para uma cor de destaque (ex: laranja) */
-    transition: all 0.3s ease;
+    transform: scale(1.2); /* Ícone cresce no hover */
+    color: #e67e22; /* Cor de destaque no ícone */
 }
 
-/* Footer */
-footer p {
-    font-size: 0.85rem; /* Diminui um pouco o tamanho */
-    color: #7f8c8d; /* Deixa um cinza mais suave */
+/* 7. Rodapé (Copyright) */
+footer {
     text-align: center;
-    margin-top: 40px;
-    padding-bottom: 20px;
-}
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
 }

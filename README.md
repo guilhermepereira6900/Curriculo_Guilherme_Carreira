@@ -1,1 +1,0 @@
-# Curriculo_Guilherme_Carreira

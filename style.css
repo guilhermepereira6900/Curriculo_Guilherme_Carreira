@@ -75,11 +75,11 @@ a:hover i {
 }
 
 /* Footer */
-footer {
+footer p {
+    font-size: 0.85rem; /* Diminui um pouco o tamanho */
+    color: #7f8c8d; /* Deixa um cinza mais suave */
     text-align: center;
-    font-size: 0.9em;
-    color: #7f8c8d;
-    margin-top: 50px;
-    padding: 20px;
-    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
 }

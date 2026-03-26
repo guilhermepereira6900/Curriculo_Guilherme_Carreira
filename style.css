@@ -20,10 +20,22 @@ header {
 }
 
 header img {
-    border-radius: 0; /* Isso remove qualquer arredondamento */
-    border: 4px solid #ecf0f1;
-    margin-top: 15px;
+    /* Mágica 1: Deixa a foto circular */
+    border-radius: 50%;
+    
+    /* Mágica 2: Define um tamanho fixo e quadrado para a moldura */
+    width: 150px;
+    height: 150px;
+    
+    /* Mágica 3: Garante que o rosto fique centralizado e preencha a moldura */
+    object-fit: cover;
+    object-position: center; /* Você pode usar 'top' se o rosto ficar muito baixo */
+    
+    /* Estilo adicional (opcional, mas fica bonito) */
+    border: 4px solid #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 15px;
+}
 }
 
 /* Títulos */
